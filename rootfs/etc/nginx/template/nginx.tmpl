@@ -196,7 +196,7 @@ http {
     {{ buildOpentracing $cfg }}
 
     include /etc/nginx/mime.types;
-    default_type text/html;
+    default_type application/octet-stream;
 
     {{ if $cfg.EnableBrotli }}
     brotli on;
